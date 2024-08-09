@@ -4,7 +4,6 @@ using UnityEngine;
 public partial class PlayerInputSystemListener : SystemBase
 {
     private PlayerInputs _playerInputs;
-    private Entity _playerEntity;
     protected override void OnCreate()
     {
         RequireForUpdate<PlayerTag>();
@@ -15,18 +14,18 @@ public partial class PlayerInputSystemListener : SystemBase
     protected override void OnStartRunning()
     {
         _playerInputs.Enable();
-        _playerEntity = SystemAPI.GetSingletonEntity<PlayerTag>();
     }
 
     protected override void OnUpdate()
     {
         var moveInput = _playerInputs.PlayerActionMap.PlayerMovement.ReadValue<Vector2>();
         SystemAPI.SetSingleton(new PlayerMoveInput { Value = moveInput });
+        bool shootButton = _playerInputs.PlayerActionMap.PlayerShoot.IsPressed();
+        SystemAPI.SetSingleton(new PlayerShooting {Shoot = shootButton });
     }
 
     protected override void OnStopRunning()
     {
         _playerInputs.Disable();
-        _playerEntity = Entity.Null;
     }
 }

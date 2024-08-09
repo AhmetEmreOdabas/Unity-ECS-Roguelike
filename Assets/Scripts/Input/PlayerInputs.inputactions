@@ -15,7 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "PlayerDash",
+                    "name": "PlayerShoot",
                     "type": "Button",
                     "id": "b1939c1c-1ebe-47e3-aaf4-ba7751a0f3bf",
                     "expectedControlType": "Button",
@@ -87,7 +87,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PlayerDash",
+                    "action": "PlayerShoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

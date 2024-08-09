@@ -47,6 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 5
   RotationSpeed: 10
+  BulletPrefab: {fileID: 4491303135761582375, guid: 446c00eb0705eb141a846f994a703e91,
+    type: 3}
 --- !u!1 &6402430226035957631
 GameObject:
   m_ObjectHideFlags: 0

@@ -186,6 +186,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1200807934065966716, guid: 9d6c2ba8a5d1583479adcfe9347ee0ee,
+        type: 3}
+      propertyPath: BulletSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200807934065966716, guid: 9d6c2ba8a5d1583479adcfe9347ee0ee,
+        type: 3}
+      propertyPath: BulletLifeTime
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2485627009990594830, guid: 9d6c2ba8a5d1583479adcfe9347ee0ee,
         type: 3}
       propertyPath: m_LocalPosition.x
