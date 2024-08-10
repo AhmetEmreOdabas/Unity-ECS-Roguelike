@@ -43,7 +43,10 @@ public partial struct PlayerMoveSystem : ISystem
                 Entity bulletEntity = _entityManager.Instantiate(_playerProperties.BulletPrefab);
                 ECB.AddComponent(bulletEntity, new BulletComponent 
                 {
-                    Speed = _playerProperties.BulletSpeed
+                    Speed = _playerProperties.BulletSpeed,
+                    BullletRadius = 1f,
+                    Size = 0.5f,
+                    Damage = 5
                 });
                 ECB.AddComponent(bulletEntity, new BulletLifeTimeComponent
                 {

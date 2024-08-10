@@ -167,16 +167,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MapBorder:
-    x: 50
-    y: 50
-  NumberEnemyToSpawn: 2
+    x: 30
+    y: 30
+  NumberEnemyToSpawn: 20
   EnemyPrefab: {fileID: 7902851783006551222, guid: 5d0e748cc405ff04b958b6e22d54ae9a,
     type: 3}
   SpawnRate: 5
   SpeedIncreaseRate: 0.1
-  EnemyIncreaseRate: 1
+  EnemyIncreaseRate: 3
   MaxSpeed: 1
-  MaxEnemies: 20
+  MaxEnemies: 100
   IncreaseThreshold: 3
 --- !u!1001 &2593699005292383421
 PrefabInstance:
@@ -186,6 +186,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1200807934065966716, guid: 9d6c2ba8a5d1583479adcfe9347ee0ee,
+        type: 3}
+      propertyPath: MoveSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1200807934065966716, guid: 9d6c2ba8a5d1583479adcfe9347ee0ee,
         type: 3}
       propertyPath: BulletSpeed
